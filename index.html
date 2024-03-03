@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+		<script defer src="index.js"></script>
+		<title>Frontend Mentor | Social Media Dashboard with Theme switcher</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body class="dark">
+		<div class="container">
+			<header>
+				<div class="title">
+					<h1>Social Media Dashboard<span>Total Followers: 23,004</span></h1>
+				</div>
+				<div class="dark-mode">
+					<span>Dark Mode</span>
+					<div class="switch" id="switch">
+						<input id="toggle-button" type="checkbox" />
+						<label for="toggle-button" class="slider round"></label>
+					</div>
+				</div>
+			</header>
+			<main>
+				<!-- FIRST GRID CONTAINER -->
+				<div class="first-grid-container">
+					<!-- FACEBOOK -->
+					<div class="card one" id="card-facebook">
+						<div class="wrapper"></div>
+						<div class="card-body facebook" id="card-one-body">
+							<div class="username">
+								<img src="./images/icon-facebook.svg" alt="" />
+								<span>@nathanf</span>
+							</div>
+							<div class="total-followers">
+								<h2 id="light-first-total-followers">1987<span>Followers</span></h2>
+							</div>
+							<div class="followers-count">
+								<img src="./images/icon-up.svg" alt="" />
+								<small>12 Today</small>
+							</div>
+						</div>
+					</div>
+					<!-- TWITTER -->
+					<div class="card two" id="card-twitter">
+						<div class="wrapper"></div>
+						<div class="card-body twitter" id="card-two-body">
+							<div class="username">
+								<img src="./images/icon-twitter.svg" alt="" />
+								<span>@nathanf</span>
+							</div>
+							<div class="total-followers">
+								<h2 id="light-second-total-followers">1044<span>Followers</span></h2>
+							</div>
+							<div class="followers-count">
+								<img src="./images/icon-up.svg" alt="" />
+								<small>99 Today</small>
+							</div>
+						</div>
+					</div>
+					<!-- INSTAGRAM -->
+					<div class="card three" id="card-instagram">
+						<div class="wrapper"></div>
+						<div class="card-body instagram" id="card-three-body">
+							<div class="username">
+								<img src="./images/icon-instagram.svg" alt="" />
+								<span>@realnathanf</span>
+							</div>
+							<div class="total-followers">
+								<h2 id="light-third-total-followers">11k<span>Followers</span></h2>
+							</div>
+							<div class="followers-count">
+								<img src="./images/icon-up.svg" alt="" />
+								<small>1099 Today</small>
+							</div>
+						</div>
+					</div>
+					<!-- YOUTUBE -->
+					<div class="card four" id="card-youtube">
+						<div class="wrapper"></div>
+						<div class="card-body youtube" id="card-four-body">
+							<div class="username">
+								<img src="./images/icon-youtube.svg" alt="" />
+								<span>Nathan F.</span>
+							</div>
+							<div class="total-followers">
+								<h2 id="light-fourth-total-followers">8239<span>Subscribers</span></h2>
+							</div>
+							<div class="followers-count">
+								<img src="./images/icon-down.svg" alt="" />
+								<small>144 Today</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- SECOND GRID CONTAINER -->
+				<h3>Overview - Today</h3>
+				<div class="second-grid-container">
+					<!-- FACEBOOK VIEW -->
+					<div class="overview card-one">
+						<div class="overview-card-body" id="overview-card-body-one">
+							<div class="top">
+								<span>Page Views</span>
+								<img src="./images/icon-facebook.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="first-h4">87</h4>
+								<div class="percent">
+									<img src="./images/icon-up.svg" alt="" />
+									<small>3%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- FACEBOOK LIKES -->
+					<div class="overview card-two">
+						<div class="overview-card-body" id="overview-card-body-two">
+							<div class="top">
+								<span>Likes</span>
+								<img src="./images/icon-facebook.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="second-h4">52</h4>
+								<div class="percent">
+									<img src="./images/icon-down.svg" alt="" />
+									<small>2%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- INSTAGRAM LIKES-->
+					<div class="overview card-three">
+						<div class="overview-card-body" id="overview-card-body-three">
+							<div class="top">
+								<span>Likes</span>
+								<img src="./images/icon-instagram.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="third-h4">5462</h4>
+								<div class="percent">
+									<img src="./images/icon-up.svg" alt="" />
+									<small>2257%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- INSTAGRAM VIEW -->
+					<div class="overview card-four">
+						<div class="overview-card-body" id="overview-card-body-four">
+							<div class="top">
+								<span>Profile Views</span>
+								<img src="./images/icon-instagram.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="fourth-h4">52k</h4>
+								<div class="percent">
+									<img src="./images/icon-up.svg" alt="" />
+									<small>1375%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- TWITTER RETWEETS -->
+					<div class="overview card-five">
+						<div class="overview-card-body" id="overview-card-body-five">
+							<div class="top">
+								<span>Retweets</span>
+								<img src="./images/icon-twitter.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="fifth-h4">117</h4>
+								<div class="percent">
+									<img src="./images/icon-up.svg" alt="" />
+									<small>303%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- TWITTER LIKES -->
+					<div class="overview card-six">
+						<div class="overview-card-body" id="overview-card-body-six">
+							<div class="top">
+								<span>Likes</span>
+								<img src="./images/icon-twitter.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="sixth-h4">507</h4>
+								<div class="percent">
+									<img src="./images/icon-up.svg" alt="" />
+									<small>553%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- YOUTUBE LIKES -->
+					<div class="overview card-seven">
+						<div class="overview-card-body" id="overview-card-body-seven">
+							<div class="top">
+								<span>Likes</span>
+								<img src="./images/icon-youtube.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="seventh-h4">107</h4>
+								<div class="percent">
+									<img src="./images/icon-down.svg" alt="" />
+									<small>19%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- YOUTUBE VIEW -->
+					<div class="overview card-eight">
+						<div class="overview-card-body" id="overview-card-body-eight">
+							<div class="top">
+								<span>Total Views</span>
+								<img src="./images/icon-youtube.svg" alt="" />
+							</div>
+							<div class="bottom">
+								<h4 id="eight-h4">1407</h4>
+								<div class="percent">
+									<img src="./images/icon-down.svg" alt="" />
+									<small>12%</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="https://github.com/kevinebenhezer">Kevin Ebenhezer</a>.
+		</div>
+	</body>
+</html>
